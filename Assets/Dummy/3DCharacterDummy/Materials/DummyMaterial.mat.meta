@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 75f6f11c806810340800c866dba8155b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 178395
+  packageName: 3D Character Dummy
+  packageVersion: 1.0
+  assetPath: Assets/Kevin Iglesias/3DCharacterDummy/Materials/DummyMaterial.mat
+  uploadId: 402839
