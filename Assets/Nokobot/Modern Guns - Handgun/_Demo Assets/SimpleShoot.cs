@@ -62,16 +62,10 @@ public class SimpleShoot : MonoBehaviour
         if (!bulletPrefab)
         { return; }
 
-        GameObject tempBullet;
-        tempBullet = Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation);
-        
-        tempBullet.GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
-
         // Create a bullet and add force on it in direction of the barrel
-        
+        Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
 
     }
-
 
     //This function creates a casing at the ejection slot
     void CasingRelease()
