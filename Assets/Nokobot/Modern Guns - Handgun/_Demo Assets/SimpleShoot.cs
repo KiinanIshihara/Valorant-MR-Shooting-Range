@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 [AddComponentMenu("Nokobot/Modern Guns/Simple Shoot")]
@@ -21,6 +22,8 @@ public class SimpleShoot : MonoBehaviour
     [Tooltip("Casing Ejection Speed")] [SerializeField] private float ejectPower = 150f;
 
 
+
+
     void Start()
     {
         if (barrelLocation == null)
@@ -40,6 +43,7 @@ public class SimpleShoot : MonoBehaviour
         }
     } */
 
+
     public void StartShoot() {
         gunAnimator.SetTrigger("Fire");
     }
@@ -48,6 +52,7 @@ public class SimpleShoot : MonoBehaviour
     //This function creates the bullet behavior
     void Shoot()
     {
+
         if (muzzleFlashPrefab)
         {
             //Create the muzzle flash

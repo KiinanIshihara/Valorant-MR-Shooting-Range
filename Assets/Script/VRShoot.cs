@@ -8,7 +8,10 @@ public class VRShoot : MonoBehaviour
     public SimpleShoot simpleShoot;
     public OVRInput.Button shootButton;
     private OVRGrabbable grabbable;
-    private AudioSource audio;
+    public AudioSource audio;
+    public AudioClip sound;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +26,7 @@ public class VRShoot : MonoBehaviour
     {
         if(grabbable.isGrabbed && OVRInput.GetDown(shootButton, grabbable.grabbedBy.GetController())) {
             simpleShoot.StartShoot();
-            audio.Play();
+            audio.PlayOneShot(sound);
         }
     }
 }
